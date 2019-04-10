@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.Label?> 
+
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.View.GameController">
+   <center>
+      <Pane prefHeight="465.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            
+            <Label fx:id="firstAuthor" layoutX="420.0" layoutY="356.0" prefHeight="50.0" prefWidth="264.0"/>
+            <Label fx:id="secondAuthor" layoutX="420.0" layoutY="406.0" prefHeight="50.0" prefWidth="264.0"/>
+            <Button fx:id="play" layoutX="220.0" layoutY="406.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Play" />
+            <Button fx:id="save" layoutX="720.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Save" />
+            <Button fx:id="load" layoutX="820.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Load" />
+            <Button fx:id="insert" layoutX="720.0" layoutY="156.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Insert" />
+            <Button fx:id="select" layoutX="820.0" layoutY="156.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Select" />
+            <Button fx:id="english" layoutX="720.0" layoutY="56.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="English" />
+            <Button fx:id="polish" layoutX="820.0" layoutY="56.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Polish" />
+            
+            <GridPane fx:id="boardGrid" layoutX="117.0" layoutY="98.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <ToggleButton fx:id="r1" layoutX="617.0" layoutY="177.0" mnemonicParsing="false" text="Easy" toggleGroup="$difficulty" />
+            <ToggleButton  fx:id="r2"  layoutX="617.0" layoutY="201.0" mnemonicParsing="false" text="Medium" toggleGroup="$difficulty" />
+            <ToggleButton  fx:id="r3"  layoutX="617.0" layoutY="225.0" mnemonicParsing="false" text="Hard" toggleGroup="$difficulty" />
+            
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
